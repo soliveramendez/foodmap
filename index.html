@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+      <title>Foodmap</title>
+   </head>
+
+    <body>
+          <div id="splash" class="container-fluid">
+           <center>
+            <img src="assets/img/splash.jpg" width="100%"alt="">
+           </center>
+          </div>
+
+           <section>
+             <nav class="navbar navbar-default">
+              <div class="container">
+               <div class="navbar-header">
+               <img alt="logo" src="assets/img/logo.png">
+             </div>
+            </div>
+          </nav>
+
+             <div class="container">
+              <div class="row text-center">
+               <div class="col-sx-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26637.87612251978!2d-70.66264938979042!3d-33.43016521443133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida!5e0!3m2!1ses!2scl!4v1513111749014" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+               </div>
+              </div>
+            </div>
+           </div>
+         </section>
+
+
+           <div class="container">
+            <div class="row text-center">
+             <div class="col-xs-12">
+              <h1>Busca tu preferida</h1>
+             </div>
+            </div>
+          </div>
+
+             <div class="row text-center">
+		    		    <div class="col-xs-12">
+                  <select id="categorias">
+                  	<option value="0">Seleccionar...</option>
+                  	<option value="Chilena">comida tipica Chilena</option>
+                  	<option value="Peruana">comida Peruana</option>
+                  	<option value="Italiana">Comida Italiana</option>
+                    <option value="Japonesa">Comida Japonesa</option>
+                    <option value="Naturista">Comida Naturista</option>
+                  </select>
+
+    	            <div id="container">
+                   <div class="text-center">
+     		    		    </div>
+                  </div>
+                </div>
+               </div>
+
+           <div class="wrap">
+            <h1>Comida cerca de ti</h1>
+            <div class="store-wrapper">
+             <div class="category_list">
+               <a href="#" class="category_item" category="all">Todo</a>
+               <a href="#" class="category_item" category="chilena">Chilena</a>
+               <a href="#" class="category_item" category="peruana">Peruana</a>
+               <a href="#" class="category_item" category="italiana">Italiana</a>
+               <a href="#" class="category_item" category="japonesa">Japonesa</a>
+               <a href="#" class="category_item" category="naturista">Naturista</a>
+            </div>
+
+           <section class="products-list">
+            <div class="product-item" category="peruana">
+              <img src="assets/img/ceviche.jpg" alt="">
+              <a href="#">ceviche</a>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Mas info</button>
+            </div>
+
+            <div class="product-item" category="peruana">
+             <img src="assets/img/rocoto.jpg" alt="">
+             <a href="#">rocoto</a>
+             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Mas info</button>
+            </div>
+
+            <div class="product-item" category="japonesa">
+             <img src="assets/img/japonesa.jpg" alt="">
+             <a href="#">Sushi</a>
+             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Mas Info</button>
+            </div>
+
+            <div class="product-item" category="japonesa">
+             <img src="assets/img/donburi.jpg" alt="">
+             <a href="#">Donburi</a>
+             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Mas Info</button>
+            </div>
+
+            <div class="product-item" category="naturista">
+             <img src="assets/img/naturista.jpg" alt="">
+             <a href="#">Zapallos rellenos</a>
+             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Mas Info</button>
+            </div>
+
+             <div class="product-item" category="chilena">
+              <img src="assets/img/chilena.jpg" alt="">
+              <a href="#">cazuela</a>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Mas Info</button>
+             </div>
+
+             <div class="product-item" category="chilena">
+              <img src="assets/img/Charquican.jpg" alt="">
+              <a href="#">Charquican</a>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Mas Info</button>
+             </div>
+
+              <div class="product-item" category="italiana">
+               <img src="assets/img/italiana.jpg" alt="">
+               <a href="#">Pastas</a>
+               <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Mas Info</button>
+              </div>
+             </div>
+           </section>
+          </div>
+         </div>
+
+          <section>
+           <div class="container-restaurant">
+          <!-- Trigger the modal with a button -->
+
+          <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              <!-- Modal content-->
+               <div class="modal-content">
+                <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <h4 class="modal-title">Comida Peruana</h4>
+              </div>
+
+              <div class="modal-body">
+               <p>Nva. Carrion 927, Independencia, región Metropolitana</p>
+               <img src="assets/img/restaurant-peruano.jpg" alt="">
+             </div>
+
+              <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </section>
+
+         <section>
+          <div class="container-restaurant2">
+            <!-- Trigger the modal with a button -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+             <div class="modal-content">
+              <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Comida Tipica</h4>
+             </div>
+            <div class="modal-body">
+             <p>La Moneda 222, Santiago, región Metropolitana</p>
+             <img src="assets/img/restaurant-tipica.jpg" alt="">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+
+        <section>
+         <div class="container-restaurant3">
+        <!-- Trigger the modal with a button -->
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal3" role="dialog">
+           <div class="modal-dialog">
+          <!-- Modal content-->
+           <div class="modal-content">
+            <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title">Comida Naturista</h4>
+            </div>
+           <div class="modal-body">
+            <p>local 17,Merced 921, Santiago, Región Metropolitana</p>
+            <img src="assets/img/restaurant-vegano.jpg" alt="">
+           </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+
+          <section>
+           <div class="container-restaurant4">
+            <!-- Trigger the modal with a button -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal4" role="dialog">
+             <div class="modal-dialog">
+            <!-- Modal content-->
+              <div class="modal-content">
+               <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Comida Japonesa</h4>
+               </div>
+              <div class="modal-body">
+               <p>Río de Janeiro 264, Recoleta, Región Metropolitana</p>
+               <img src="assets/img/restaurant-japonesa.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+
+           <section>
+            <div class="container-restaurant5">
+              <!-- Trigger the modal with a button -->
+
+              <!-- Modal -->
+             <div class="modal fade" id="myModal5" role="dialog">
+              <div class="modal-dialog">
+              <!-- Modal content-->
+               <div class="modal-content">
+                <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <h4 class="modal-title">Comida Italiana</h4>
+                </div>
+               <div class="modal-body">
+                <p>Dominica 35, Recoleta, Región Metropolitana</p>
+                <img src="assets/img/restaurant-italiano.jpg" alt="">
+               </div>
+              <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+       </section>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="assets/js/app.js"></script>
+  </body>
+</html>
